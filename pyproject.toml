@@ -1,0 +1,18 @@
+[project]
+name = "fastrawgis"
+version = "0.1.0"
+description = "Integration of FastAPI, Strawberry, PostGIS, SQLAlchemy, and asyncpg."
+authors = [{name = "Kinuax"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+]
+
+[tool.poetry]
+package-mode = false
+requires-poetry = ">=2.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
