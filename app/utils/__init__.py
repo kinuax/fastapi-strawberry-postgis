@@ -1,4 +1,4 @@
-from .space import get_lat_lon, get_point
+from .space import get_lat_lon_from_point, get_point_from_lat_lon
 from .time import (
     get_date_from_str,
     get_time_from_str,
