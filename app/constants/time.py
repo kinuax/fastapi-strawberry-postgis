@@ -1,5 +1,9 @@
+from datetime import time
+
 DATE_FORMAT = "%y-%m-%d"
 DATE_FORMAT_REPR = "YY-MM-DD"
 TIME_FORMAT = "%H:%M"
 TIME_FORMAT_REPR = "HH:MM"
 DATETIME_FORMAT = f"{DATE_FORMAT} {TIME_FORMAT}"
+TIME_MIN = time(0)
+TIME_MAX = time(23, 59)
