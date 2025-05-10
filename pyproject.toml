@@ -12,6 +12,7 @@ dependencies = [
     "pydantic-settings (==2.9.1)",
     "shapely (==2.1.0)",
     "sqlalchemy (==2.0.40)",
+    "strawberry-graphql[cli] (==0.266.1)",
     "typer (==0.15.3)",
 ]
 
