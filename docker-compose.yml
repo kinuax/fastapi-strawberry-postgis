@@ -4,6 +4,8 @@ services:
     container_name: fastrawgis-app
     volumes:
       - ./app:/code/app
+    ports:
+      - "80:80"
     depends_on:
       - db
 
