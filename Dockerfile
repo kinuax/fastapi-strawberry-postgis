@@ -12,4 +12,4 @@ RUN poetry install
 
 COPY app/ app/
 
-CMD ["tail", "-f", "/dev/null"]
+CMD ["hypercorn", "--bind", "0.0.0.0:80", "--worker-class", "uvloop", "--workers", "5", "asgi:app.main:app"]
