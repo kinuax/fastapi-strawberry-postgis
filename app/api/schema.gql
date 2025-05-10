@@ -1,0 +1,36 @@
+type Event {
+  id: String!
+  venue: Venue!
+  name: String!
+  start: String!
+  end: String!
+  desc: String
+}
+
+type Point {
+  lat: Float!
+  lon: Float!
+}
+
+type Query {
+  town(townId: String!): Town
+  towns: [Town!]!
+  venue(venueId: String!): Venue
+  venues(townId: String = null): [Venue!]!
+  event(eventId: String!): Event
+  events(day: String!, townIds: [String!] = null, venueIds: [String!] = null, lat: Float = null, lon: Float = null, radius: Int = null, startTime: String = null, endTime: String = null): [Event!]!
+}
+
+type Town {
+  id: String!
+  name: String!
+}
+
+type Venue {
+  id: String!
+  town: Town!
+  name: String!
+  point: Point!
+  address: String
+  distance: Int
+}
